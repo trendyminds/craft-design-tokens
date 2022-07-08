@@ -1,0 +1,8 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.selectField({
+		label: 'Config',
+		name: 'config',
+		options: options,
+		value: field['config'],
+}) }}
