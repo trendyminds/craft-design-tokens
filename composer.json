@@ -1,5 +1,5 @@
 {
-  "name": "trendyminds/design-tokens",
+  "name": "trendyminds/craft-design-tokens",
   "description": "A Craft dropdown field powered by JSON files in your project",
   "type": "craft-plugin",
   "version": "1.0.0",
@@ -12,9 +12,8 @@
     }
   ],
   "support": {
-    "issues": "https://github.com/trendyminds/design-tokens/issues?state=open",
-    "source": "https://github.com/trendyminds/design-tokens",
-    "docs": "https://github.com/trendyminds/design-tokens/blob/master/README.md"
+    "source": "https://github.com/trendyminds/craft-design-tokens",
+    "docs": "https://github.com/trendyminds/craft-design-tokens/blob/main/README.md"
   },
   "require": {
 		"php": "^8.0.2",
@@ -29,7 +28,7 @@
     "name": "Design Tokens",
     "handle": "designtokens",
     "class": "trendyminds\\designtokens\\DesignTokens",
-    "changelogUrl": "https://raw.githubusercontent.com/trendyminds/design-tokens/main/CHANGELOG.md"
+    "changelogUrl": "https://raw.githubusercontent.com/trendyminds/craft-design-tokens/main/CHANGELOG.md"
   },
   "config": {
     "allow-plugins": {
