@@ -48,18 +48,18 @@ Changing "tight" to "tighter" would break any entry using "tight"! Now when it t
 
 ```json
 {
-	"red": {
-		"text": "text-red-500",
-		"bg": "bg-red-100"
-	},
-	"green": {
-		"text": "text-green-500",
-		"bg": "bg-green-100"
-	},
-	"blue": {
-		"text": "text-blue-500",
-		"bg": "bg-blue-100"
-	}
+  "red": {
+    "text": "text-red-500",
+    "bg": "bg-red-100"
+  },
+  "green": {
+    "text": "text-green-500",
+    "bg": "bg-green-100"
+  },
+  "blue": {
+    "text": "text-blue-500",
+    "bg": "bg-blue-100"
+  }
 }
 
 ```
