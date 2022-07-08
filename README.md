@@ -77,6 +77,12 @@ Changing "tight" to "tighter" would break any entry using "tight"! Now when it t
 {# Outputs the nested value of the selected option (bg-red-100, bg-green-100, bg-blue-100) #}
 ```
 
+## 🪄 Example
+
+Rather than using many Twig conditions to render the properly selected colors you can use Design Tokens to easily pluck the value you need and insert the class into your respective HTML.
+
+<img src"example.png">
+
 ## 📦 Installing
 
 1. Download the zip of this project
