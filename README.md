@@ -14,8 +14,8 @@ Editing these JSON files means it's possible to break the output of your data. F
 ```diff
 {
   "standard": "my-12",
-  +"tighter": "my-6",
-  -"tight": "my-6",
++ "tighter": "my-6",
+- "tight": "my-6",
   "none": "my-0"
 }
 ```
