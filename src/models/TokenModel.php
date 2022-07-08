@@ -1,10 +1,10 @@
 <?php
 
-namespace modules\designtokens\models;
+namespace trendyminds\designtokens\models;
 
 use Craft;
 use craft\base\Model;
-use modules\designtokens\DesignTokens;
+use trendyminds\designtokens\DesignTokens;
 
 class TokenModel extends Model
 {

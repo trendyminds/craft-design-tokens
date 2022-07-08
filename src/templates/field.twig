@@ -1,0 +1,20 @@
+{% import "_includes/forms" as forms %}
+
+{% if not options %}
+	<p class="error">This field isn't connected to a config or the config does not have any selectable options.</p>
+{% endif %}
+
+{% if options %}
+	{{ forms.hidden({
+		value: field['config'],
+		name: name ~ "[config]",
+	}) }}
+
+	{{ forms.selectField({
+		id: id ~ namespacedId,
+		name: "#{ name }[key]",
+		options: options,
+		value: value,
+		first: true,
+	}) }}
+{% endif %}

@@ -1,0 +1,40 @@
+{
+  "name": "trendyminds/design-tokens",
+  "description": "A Craft dropdown field powered by JSON files in your project",
+  "type": "craft-plugin",
+  "version": "1.0.0",
+  "keywords": ["token field", "craft", "craft cms"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "TrendyMinds",
+      "homepage": "https://trendyminds.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/trendyminds/design-tokens/issues?state=open",
+    "source": "https://github.com/trendyminds/design-tokens",
+    "docs": "https://github.com/trendyminds/design-tokens/blob/master/README.md"
+  },
+  "require": {
+		"php": "^8.0.2",
+    "craftcms/cms": "^4.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "trendyminds\\designtokens\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "Design Tokens",
+    "handle": "designtokens",
+    "class": "trendyminds\\designtokens\\DesignTokens",
+    "changelogUrl": "https://raw.githubusercontent.com/trendyminds/design-tokens/main/CHANGELOG.md"
+  },
+  "config": {
+    "allow-plugins": {
+      "yiisoft/yii2-composer": false,
+      "craftcms/plugin-installer": false
+    }
+  }
+}
