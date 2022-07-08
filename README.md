@@ -87,7 +87,8 @@ Rather than using many Twig conditions to render the properly selected colors yo
 
 1. Download the zip of this project
 2. Move the `designtokens` folder into `modules/`
-3. Include the `designtokens` data into `config/app.php` in the `modules` and `bootstrap` sections:
+3. Move the JSON files from `designtokens/config` to `config/designtokens/`
+4. Include the `designtokens` data into `config/app.php` in the `modules` and `bootstrap` sections:
 
 ```php
 'modules' => [
@@ -98,7 +99,7 @@ Rather than using many Twig conditions to render the properly selected colors yo
 ],
 ```
 
-4. Ensure your `composer.json` is referencing the `designtokens` module:
+5. Ensure your `composer.json` is referencing the `designtokens` module:
 ```json
 "autoload": {
   "psr-4": {
@@ -107,5 +108,5 @@ Rather than using many Twig conditions to render the properly selected colors yo
 }
 ```
 
-5. Run `composer dump-autoload`
-6. Add the "Design Tokens" fieldtype where needed
+6. Run `composer dump-autoload`
+7. Add the "Design Tokens" fieldtype where needed

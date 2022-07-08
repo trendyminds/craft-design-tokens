@@ -15,7 +15,7 @@ class Configs extends Component
 	 */
 	public function getAll(): array
 	{
-		$folder = Craft::getAlias("@modules/designtokens") . DIRECTORY_SEPARATOR . "config";
+		$folder = Craft::getAlias("@config") . DIRECTORY_SEPARATOR . "designtokens";
 
 		return FileHelper::findFiles($folder, [
 			'only' => ['*.json'],
@@ -31,7 +31,7 @@ class Configs extends Component
 	 */
 	public function getOptionsByFilename(string $filename): array
 	{
-		$folder = Craft::getAlias("@modules/designtokens") . DIRECTORY_SEPARATOR . "config";
+		$folder = Craft::getAlias("@config") . DIRECTORY_SEPARATOR . "designtokens";
 		$config = file_get_contents($folder . DIRECTORY_SEPARATOR . $filename);
 
 		if (!$config) {
@@ -53,7 +53,7 @@ class Configs extends Component
 	 */
 	public function getValuesByFilename(string $filename): array
 	{
-		$folder = Craft::getAlias("@modules/designtokens") . DIRECTORY_SEPARATOR . "config";
+		$folder = Craft::getAlias("@config") . DIRECTORY_SEPARATOR . "designtokens";
 		$config = file_get_contents($folder . DIRECTORY_SEPARATOR . $filename);
 
 		if (!$config) {
