@@ -24,7 +24,9 @@ Changing "tight" to "tighter" would break any entry using "tight"! Now when it t
 
 ## 📝 Usage
 
-### A single key/value pair
+To setup configurations, create individual JSON files within `config/designtokens`.
+
+### A single key/value pair (Ex: `spacing.json`)
 
 ```json
 {
@@ -44,7 +46,7 @@ Changing "tight" to "tighter" would break any entry using "tight"! Now when it t
 {# Outputs the key of the selected option (standard, tight, none) #}
 ```
 
-### A nested key/value pair
+### A nested key/value pair (Ex: `hero.json`)
 
 ```json
 {
@@ -81,32 +83,14 @@ Changing "tight" to "tighter" would break any entry using "tight"! Now when it t
 
 Rather than using many Twig conditions to render the properly selected colors you can use Design Tokens to easily pluck the value you need and insert the class into your respective HTML.
 
-![An example of design tokens on a module](example.png)
+![An example of design tokens on a module](resources/example.png)
 
 ## 📦 Installing
 
-1. Download the zip of this project
-2. Move the `designtokens` folder into `modules/`
-3. Move the JSON files from `designtokens/config` to `config/designtokens/`
-4. Include the `designtokens` data into `config/app.php` in the `modules` and `bootstrap` sections:
+Install Design Tokens in one of two ways:
+- [Install via Craft's Plugin Store](https://plugins.craftcms.com/design-tokens)
+- Run `composer require trendyminds/design-tokens` and enable the plugin from "Settings > Plugins"
 
-```php
-'modules' => [
-  'designtokens' => \modules\designtokens\DesignTokens::class,
-],
-'bootstrap' => [
-  'designtokens',
-],
-```
+## 🤝 Contributing
 
-5. Ensure your `composer.json` is referencing the `designtokens` module:
-```json
-"autoload": {
-  "psr-4": {
-    "modules\\designtokens\\": "modules/designtokens/",
-  }
-}
-```
-
-6. Run `composer dump-autoload`
-7. Add the "Design Tokens" fieldtype where needed
+If you'd like to contribute please submit a pull request for review. We try to review and accept contributions whenever possible!

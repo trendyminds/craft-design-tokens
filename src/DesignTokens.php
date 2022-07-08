@@ -1,19 +1,20 @@
 <?php
 
-namespace modules\designtokens;
+namespace trendyminds\designtokens;
 
 use Craft;
 use craft\web\View;
+use craft\base\Plugin;
 use craft\services\Fields;
 use craft\events\RegisterTemplateRootsEvent;
 use craft\events\RegisterComponentTypesEvent;
-use modules\designtokens\fields\DesignTokensField;
-use modules\designtokens\services\Configs;
 
-use yii\base\Module;
+use trendyminds\designtokens\fields\DesignTokensField;
+use trendyminds\designtokens\services\Configs;
+
 use yii\base\Event;
 
-class DesignTokens extends Module
+class DesignTokens extends Plugin
 {
 	public static $instance;
 

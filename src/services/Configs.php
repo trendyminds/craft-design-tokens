@@ -1,6 +1,6 @@
 <?php
 
-namespace modules\designtokens\services;
+namespace trendyminds\designtokens\services;
 
 use Craft;
 use craft\base\Component;
@@ -16,6 +16,15 @@ class Configs extends Component
 	public function getAll(): array
 	{
 		$folder = Craft::getAlias("@config") . DIRECTORY_SEPARATOR . "designtokens";
+
+		if (!is_dir($folder)) {
+			Craft::info(
+				"The $folder does not exist. Create this directory and add your JSON config files for customization.",
+				"designtokens"
+			);
+
+			return [];
+		}
 
 		return FileHelper::findFiles($folder, [
 			'only' => ['*.json'],

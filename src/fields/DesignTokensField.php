@@ -1,13 +1,13 @@
 <?php
 
-namespace modules\designtokens\fields;
+namespace trendyminds\designtokens\fields;
 
 use Craft;
 use craft\base\ElementInterface;
 use craft\base\Field;
 use craft\helpers\Json;
-use modules\designtokens\models\TokenModel;
-use modules\designtokens\DesignTokens;
+use trendyminds\designtokens\models\TokenModel;
+use trendyminds\designtokens\DesignTokens;
 use yii\db\Schema;
 
 class DesignTokensField extends Field
@@ -80,7 +80,10 @@ class DesignTokensField extends Field
 			'value' => $value->key ?? null,
 			'name' => $this->handle,
 			'namespacedId' => $namespacedId,
-			'options' => DesignTokens::$instance->configs->getOptionsByFilename($this->config),
+			'options' =>
+				$this->config
+					? DesignTokens::$instance->configs->getOptionsByFilename($this->config)
+					: null,
 		]);
 	}
 }
