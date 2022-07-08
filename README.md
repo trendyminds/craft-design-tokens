@@ -81,7 +81,7 @@ Changing "tight" to "tighter" would break any entry using "tight"! Now when it t
 
 Rather than using many Twig conditions to render the properly selected colors you can use Design Tokens to easily pluck the value you need and insert the class into your respective HTML.
 
-<img src"example.png">
+![An example of design tokens on a module](example.png)
 
 ## 📦 Installing
 
