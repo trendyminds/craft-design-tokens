@@ -1,5 +1,10 @@
 # Release Notes for Design Tokens
 
+## 1.0.3 - 2022-07-08
+
+### Added
+- New icon
+
 ## 1.0.2 - 2022-07-08
 
 ### Fixed
