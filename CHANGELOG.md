@@ -1,5 +1,10 @@
 # Release Notes for Design Tokens
 
+## 1.1.1 - 2023-06-09
+
+### Added
+- README bump
+
 ## 1.1.0 - 2023-06-09
 
 ### Added
