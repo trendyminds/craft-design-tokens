@@ -11,7 +11,7 @@ use craft\events\RegisterComponentTypesEvent;
 
 use trendyminds\designtokens\fields\DesignTokensField;
 use trendyminds\designtokens\services\Configs;
-
+use trendyminds\designtokens\twigextensions\DesignTokensTwigExtension;
 use yii\base\Event;
 
 class DesignTokens extends Plugin
@@ -56,5 +56,11 @@ class DesignTokens extends Plugin
 				$event->types[] = DesignTokensField::class;
 			}
 		);
+
+		// Register our Twig extension
+		if (Craft::$app->request->getIsSiteRequest()) {
+			$extension = new DesignTokensTwigExtension();
+			Craft::$app->view->registerTwigExtension($extension);
+		}
 	}
 }

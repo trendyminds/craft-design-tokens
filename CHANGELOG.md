@@ -1,5 +1,10 @@
 # Release Notes for Design Tokens
 
+## 1.1.0 - 2023-06-09
+
+### Added
+- Twig function `{{ designTokens('yourFile') }}` will now return an object of that file's tokens. This is useful when you want to use a token in a template, but it isn't tied to a Design Token field
+
 ## 1.0.3 - 2022-07-08
 
 ### Added
