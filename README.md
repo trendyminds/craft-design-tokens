@@ -79,6 +79,22 @@ To setup configurations, create individual JSON files within `config/designtoken
 {# Outputs the nested value of the selected option (bg-red-100, bg-green-100, bg-blue-100) #}
 ```
 
+You can also call a config directly without interface with a field.
+
+```twig
+{# Get the spacing.json config #}
+{{ designTokens('spacing') }}
+
+{# Get the value from the `standard` key #}
+{{ designTokens('spacing').standard }}
+
+{# Get the value from the `tight` key #}
+{{ designTokens('spacing').tight }}
+
+{# Get the value from the `none` key #}
+{{ designTokens('spacing').none }}
+```
+
 ## 🪄 Example
 
 Rather than using many Twig conditions to render the properly selected colors you can use Design Tokens to easily pluck the value you need and insert the class into your respective HTML.
