@@ -2,7 +2,7 @@
   "name": "trendyminds/craft-design-tokens",
   "description": "A Craft dropdown field powered by JSON files in your project",
   "type": "craft-plugin",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "keywords": ["token field", "craft", "craft cms"],
   "license": "MIT",
   "authors": [
@@ -16,8 +16,8 @@
     "docs": "https://github.com/trendyminds/craft-design-tokens/blob/main/README.md"
   },
   "require": {
-		"php": "^8.0.2",
-    "craftcms/cms": "^4.0.0"
+		"php": "^8.2",
+    "craftcms/cms": "^5.0.0-alpha.3"
   },
   "autoload": {
     "psr-4": {
@@ -35,5 +35,8 @@
       "yiisoft/yii2-composer": false,
       "craftcms/plugin-installer": false
     }
+  },
+  "require-dev": {
+    "laravel/pint": "^1.13"
   }
 }
