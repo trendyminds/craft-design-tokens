@@ -57,8 +57,8 @@ class DesignTokensField extends Field
 		// Get all of the available configs and return just their filename
 		$configs = collect(DesignTokens::$instance->configs->getAll())
 			->map(function ($path) {
-				$parts = explode("/", $path);
-				return end($parts);
+				$folder = Craft::getAlias("@config") . DIRECTORY_SEPARATOR . "designtokens" . DIRECTORY_SEPARATOR;
+				return str_replace( $folder, '', $path );
 			})
 			->mapWithKeys(fn($filename) => [$filename => $filename])
 			->toArray();
