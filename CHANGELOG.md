@@ -1,9 +1,9 @@
 # Release Notes for Design Tokens
 
-## 2.0.0 - 2024-01-01
+## 2.0.0 - 2024-03-27
 
 ### Added
-- Setup Craft 5 (alpha 3) support
+- Craft 5 support
 
 ## 1.1.1 - 2023-06-09
 
